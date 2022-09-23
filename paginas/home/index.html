@@ -1,0 +1,254 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'CSS/variables.css' %}">
+    <link rel="stylesheet" href="{% static 'CSS/elements.css' %}">
+    <link rel="stylesheet" href="{% static 'CSS/classes.css' %}">
+    <link rel="stylesheet" href="{% static 'CSS/menu.css' %}">
+    <link rel="stylesheet" href="{% static 'CSS/style.css' %}">
+</head>
+
+<input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+<label class="close-menu-label" for="close-menu" title="close-menu"></label>
+
+<body>
+    <aside class="menu white-bg">
+        <div class="main-content menu-content">
+            <h1 onclick="getElementById('close-menu').checked = false;">
+                <a href="#home"><img class="logo-img" src="{% static 'img/astaporlogo.jpeg'%}" alt=""></a>
+            </h1>
+
+            <nav>
+                <ul onclick="getElementById('close-menu').checked = false;">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#modelos">Modelos</a></li>
+                    <li><a href="#medidas">Medidas</a></li>
+                    <li><a href="#gallery">Galeria</a></li>
+                    <li><a href="#pricing">Preços</a></li>
+                    <li><a href="#contact">Contatos</a></li>
+                    <li><a href="https://api.whatsapp.com/send?phone=555499789396" target="_blank">Whatsapp
+                        <img class="whatsapp-img" src="{% static 'img/whatsapp.svg'%}"></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+
+    <div class="menu-spacing"></div>
+
+    <section id="home" class="intro main-bg section">
+        <div class="">
+            <div class="home-text">
+                <h2>ASTAPOR WEAR</h2>
+                <p>A Astapor Wear é uma loja de comercialização de regatas para a prática de esportes de musculação, que está no mercado desde 2019.
+                    Nossas regatas possuem a tecnologia DryFit, a qual mantem o esportista o mais seco possível durante a prática
+                    do esporte.
+                    Abaixo você poderá conhecer um pouco mais de nossos produtos, bem como entrar em contato conosco através do Whatsapp ou
+                    formulário disponível nesta página.
+                </p>
+            </div>
+            <div class="intro-img">
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="modelos" class="grid-one section">
+        <div class="main-content grid-one-content">
+            <h2 class="grid-main-heading">Modelos</h2>
+            <p class="grid-description">Uma breve descrição</p>
+            <div class="grid">
+                <article>
+                    <h3 class="modelos-text">Super Cavadas</h3>
+
+                    <div>
+                        <img class="modelos-content-img" src="{% static 'img/pretalisasuper.jpg' %}" alt="Regata Super Cavada Preta Lisa">
+                    </div>
+                </article>
+
+                <article>
+                    <h3 class="modelos-text">Tradicionais</h3>
+
+                    <div>
+                        <img class="modelos-img2" src="{% static 'img/Super cavada Chernobyl vestida 1.jpeg'%}" alt="Regata Super Cavada Preta Lisa">
+                    </div>
+                </article>
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="medidas" class="grid-one main-bg section">
+        <div class="main-content grid-one-content">
+            <h2 class="grid-main-heading">Medidas</h2>
+            <p class="grid-description">Uma breve descrição</p>
+            <div class="grid">
+                <article>
+                    <h3 class="modelos-content">Super Cavadas</h3>
+
+                    <div>
+                        <img class="medidas-content-img" src="{% static 'img/dimensoessuper.jpg'%}" alt="Regata Super Cavada Preta Lisa">
+                    </div>
+                </article>
+
+                <article>
+                    <h3 class="medidas-content">Tradicionais</h3>
+
+                    <div>
+                        <img class="modelos-content-img2" src="{% static 'img/medidastradicional.jpg'%}" alt="Dimensões Super Cavada Preta Lisa">
+                    </div>
+
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section id="gallery" class="grid-one white-bg section">
+        <div class="main-content grid-one-content">
+            <h2 class="grid-main-heading">Galeria</h2>
+            <p class="grid-description">Estas e muitas outras estampas disponíveis</p>
+
+            <div class="grid">
+                <div class="gallery-img">
+                    <img class="gallery-img" src="{% static 'img/Training Goku Tradicional.jpeg'%}" alt="random image from unsplash" />
+                </div>
+
+                <div class="gallery-img">
+                    <img class="gallery-img" src="{% static 'img/Chernobyl Super Cavada.jpeg'%}" alt="random image from unsplash" />
+                </div>
+
+                <div class="gallery-img">
+                    <img class="gallery-img" src="{% static 'img/pretalisasuper.jpg'%}" alt="random image from unsplash" />
+                </div>
+
+                <div class="gallery-img">
+                    <img class="gallery-img" src="{% static 'img/Gokus Gym Super Cavada.jpeg'%}" alt="random image from unsplash" />
+                </div>
+
+                <div class="gallery-img">
+
+                    <img class="gallery-img" src="{% static 'img/NoPaiNoGainSuperCavada.jpeg'%}" alt="random image from unsplash" />
+
+                </div>
+
+                <div class="gallery-img">
+                    <img class="gallery-img" src="{% static 'img/Kit 3 Regatas tradiconais.jpeg'%}" alt="random image from unsplash" />
+
+                </div>
+
+                <div class="gallery-img">
+                    <img class="gallery-img" src="{% static 'img/Leão Super Cavada vestido.jpg'%}" alt="random image from unsplash" />
+
+                </div>
+
+                <div class="gallery-img">
+                    <img class="gallery-img" src="{% static 'img/Justiceiro Tradiocional vestido.jpeg'%}" alt="random image from unsplash" />
+
+                </div>
+
+                <div class="gallery-img">
+                    <img class="gallery-img" src="{% static 'img/Capitão.png'%}" alt="random image from unsplash" />
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="pricing" class="white-bg section">
+        <div class="main-content top3-content">
+            <h2>Preços</h2>
+
+            <div>
+                  <h3 class="text-style-preco">
+                    Qualquer tamanho ou modelo de regata por:
+                  </h3>
+                  <img class="preco-img" src="{% static 'img/precoregatas.png'%}" alt="preço regatas R$ 29,99">
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact" class="intro main-bg section">
+        <div class="main-content intro-content">
+            <div class="intro-text-content">
+                <h2 class="contact-text">Entre em contato conosco através do formulário abaixo</h2>
+                <p>Nos contate através desde formulário para maiores informações de nossos produtos e também o utilize para formalizar pedidos
+                    de compras.
+                </p>
+            </div>
+            <div class="intro-img">
+
+            </div>
+            <div class="contact-form">
+                <meta name="referrer" content="origin"/> 
+                <form action="https://formsubmit.co/astaporwear@gmail.com" method="POST" href="#home">
+
+
+                    <fieldset class="form-grid">
+                        
+                            <div class="form-group">
+                                <label for="first-name">Nome</label>
+                                <input type="text" name="first-name" id="first-name" placeholder="Seu nome">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="last-name">Sobrenome</label>
+                                <input type="text" name="last-name" id="last-name" placeholder="Seu sobrenome">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">E-mail</label>
+                                <input type="email" name="email" id="email" placeholder="Seu e-mail">
+                            </div>
+
+                            <div class="form-group full-widht">
+                                <label for="message">Mensagem</label>
+                                <textarea name="message" id="message" cols="30" rows="10" placeholder="Escreva sua mensagem aqui"></textarea>
+                            </div>
+
+                            <div class="form-group full-widht">
+                                <button type="submit">Enviar Mensagem</button>
+                            </div>
+
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+
+    <footer id="footer" class="footer white-bg">
+        <p><a rel="nofollow" target="_blank" href="https://mssg.me/ket60">Feito por AsTech</a></p>
+    </footer>
+
+    <a class="back-to-top" href="#home">Top</a>
+
+
+</body>
+
+</html>
